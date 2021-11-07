@@ -1,0 +1,50 @@
+@import "variables";
+
+.skills {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 30%;
+
+    .skills_h2 {
+        padding-bottom: 10%;
+    }
+
+    .skills_div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    i {
+        color: $quaternary-color;
+        padding: 5%;
+    }
+
+    i:hover {
+        color: white;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+}
+
+@media screen and (min-width: $desktop-breakpoint) {
+    .skills {
+        margin-left: 0%;
+
+        >div {
+            margin-left: 25%;
+        }
+
+        >.skills_div {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15vh;
+            margin-left: 13%;
+        }
+
+        i {
+            padding: 0%;
+        }
+    }
+}

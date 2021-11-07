@@ -1,0 +1,16 @@
+.nav {
+  position: fixed;
+  left: 80%;
+}
+.nav > .nav_btn {
+  font-size: 9vh;
+  color: #CCCCCC;
+  margin: 20%;
+  border: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .nav {
+    display: none;
+  }
+}

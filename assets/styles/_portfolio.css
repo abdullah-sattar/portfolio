@@ -1,0 +1,27 @@
+.portfolio {
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 30%;
+}
+.portfolio .portfolio_h2 {
+  padding-bottom: 10%;
+}
+.portfolio img {
+  width: 20%;
+}
+
+@media screen and (min-width: 1024px) {
+  .portfolio {
+    margin-left: 0%;
+  }
+  .portfolio > div {
+    margin-left: 25%;
+  }
+  .portfolio > .portfolio_div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15vh;
+    margin-left: 25%;
+  }
+}

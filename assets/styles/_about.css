@@ -1,0 +1,33 @@
+.about {
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 30%;
+}
+.about > .about_h2 {
+  padding-bottom: 10%;
+}
+.about img {
+  padding-bottom: 3%;
+  width: 40%;
+}
+.about p {
+  text-align: justify;
+  font-size: 3vh;
+}
+
+@media screen and (min-width: 1024px) {
+  .about {
+    margin-left: 22%;
+  }
+  .about > .about_div {
+    display: flex;
+    gap: 10%;
+  }
+  .about > .about_div > p {
+    text-align: left;
+  }
+  .about > .about_div img {
+    width: 30vh;
+    height: 30vh;
+  }
+}

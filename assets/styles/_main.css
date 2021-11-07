@@ -1,0 +1,39 @@
+.main > .main_section > .section_p {
+  font-weight: bold;
+  font-size: 5vh;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-bottom: 10%;
+  padding-top: 30%;
+}
+.main > .main_div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main .btn-primary {
+  font-weight: bold;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 10%;
+}
+.main i {
+  color: white;
+  font-size: 10vh;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+@media screen and (min-width: 1024px) {
+  .main > .main_section > .section_p {
+    margin-left: 22%;
+    padding-top: 10%;
+  }
+  .main .btn-primary {
+    margin-right: 0%;
+  }
+  .main i {
+    margin-left: 22%;
+  }
+}
