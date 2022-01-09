@@ -188,13 +188,13 @@ html body {
   align-items: center;
   gap: 10%;
 }
-.about img {
-  padding-bottom: 3%;
-  width: 40%;
-  width: 30vh;
+.about > .about_div img {
+  margin-bottom: 3%;
+  width: 27vh;
   height: 30vh;
+  border-radius: 10px;
 }
-.about p {
+.about > .about_div p {
   text-align: justify;
   font-size: 3vh;
 }
@@ -204,6 +204,9 @@ html body {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+  }
+  .about > .about_div img {
+    width: 30vh;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -231,14 +234,48 @@ html body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  gap: 5vh;
 }
-.skills i {
+.skills .skills_div .icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  color: #CCCCCC;
+}
+.skills .skills_div .icon-wrapper:hover {
+  color: white;
+  transition: 0.4s;
+}
+.skills .skills_div .icon-name {
+  opacity: 0;
+  font-weight: bold;
+  text-align: center;
+}
+.skills .skills_div i {
   color: #CCCCCC;
   padding: 5%;
+  margin: 0;
 }
-.skills i:hover {
+.skills .skills_div svg {
+  padding: 5%;
+  margin: 0;
+}
+.skills .skills_div i:hover {
   color: white;
   cursor: pointer;
+  transition: 0.4s;
+}
+.skills .skills_div i:hover + .icon-name {
+  opacity: 1;
+  transition: 0.4s;
+}
+.skills .skills_div svg:hover {
+  fill: white;
+  cursor: pointer;
+}
+.skills .skills_div svg:hover + .icon-name {
+  opacity: 1;
   transition: 0.4s;
 }
 
@@ -253,7 +290,7 @@ html body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 15vh;
-    margin-left: 13%;
+    margin-left: 25%;
   }
   .skills i {
     padding: 0%;
@@ -267,14 +304,51 @@ html body {
 .portfolio .portfolio_h2 {
   padding-bottom: 10%;
 }
-.portfolio img {
-  width: 20%;
-}
 .portfolio > .portfolio_div {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 15vh;
+}
+.portfolio .project-wrapper {
+  position: relative;
+  width: 20vh;
+  height: 25vh;
+}
+.portfolio .project-wrapper img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  box-shadow: 5px 10px 10px #2c2c2c;
+}
+.portfolio .project-wrapper > .info-wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  border-radius: 15px;
+}
+.portfolio .project-wrapper > .info-wrapper p {
+  padding: 20px;
+  background-color: rgba(75, 75, 75, 0);
+}
+.portfolio .project-wrapper > .info-wrapper .button-wrapper {
+  background-color: rgba(75, 75, 75, 0);
+  display: flex;
+}
+.portfolio .project-wrapper:hover {
+  transition: 0.4s;
+  width: 40vh;
+  height: 50vh;
+}
+.portfolio .project-wrapper:hover .info-wrapper {
+  transition: 1.4s;
+  opacity: 1;
+  background-color: rgba(75, 75, 75, 0.8);
 }
 
 @media screen and (min-width: 1024px) {
@@ -286,6 +360,17 @@ html body {
   }
   .portfolio > .portfolio_div {
     margin-left: 25%;
+  }
+  .portfolio .project-wrapper {
+    width: 25vh;
+    height: 30vh;
+  }
+  .portfolio .project-wrapper .button-wrapper {
+    margin-left: 5vh;
+  }
+  .portfolio .project-wrapper:hover {
+    width: 50vh;
+    height: 60vh;
   }
 }
 .contact {

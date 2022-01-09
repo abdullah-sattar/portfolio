@@ -1,36 +1,93 @@
 @import "variables";
 
 .portfolio {
-    margin-left: 10%;
-    margin-right: 10%;
-    padding-top: 30%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 30%;
 
-    .portfolio_h2 {
-        padding-bottom: 10%;
-    }
+  .portfolio_h2 {
+    padding-bottom: 10%;
+  }
+
+  > .portfolio_div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15vh;
+  }
+
+  .project-wrapper {
+    position: relative;
+    width: 20vh;
+    height: 25vh;
 
     img {
-        width: 20%;
+      width: 100%;
+      height: 100%;
+      border-radius: 15px;
+      box-shadow: 5px 10px 10px #2c2c2c;
     }
 
-    >.portfolio_div {
+    > .info-wrapper {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      border-radius: 15px;
+
+      p {
+        padding: 20px;
+        background-color: rgba(75, 75, 75, 0);
+      }
+
+      .button-wrapper {
+        background-color: rgba(75, 75, 75, 0);
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15vh;
+      }
     }
+  }
+
+  .project-wrapper:hover {
+    transition: 0.4s;
+    width: 40vh;
+    height: 50vh;
+  }
+
+  .project-wrapper:hover .info-wrapper {
+    transition: 1.4s;
+    opacity: 1;
+    background-color: rgba(75, 75, 75, 0.8);
+  }
 }
 
 @media screen and (min-width: $desktop-breakpoint) {
-    .portfolio {
-        margin-left: 0%;
+  .portfolio {
+    margin-left: 0%;
 
-        >div {
-            margin-left: 25%;
-        }
-
-        >.portfolio_div {
-            margin-left: 25%;
-        }
+    > div {
+      margin-left: 25%;
     }
+
+    > .portfolio_div {
+      margin-left: 25%;
+    }
+
+    .project-wrapper {
+      width: 25vh;
+      height: 30vh;
+
+      .button-wrapper {
+        margin-left: 5vh;
+      }
+    }
+
+    .project-wrapper:hover {
+      width: 50vh;
+      height: 60vh;
+    }
+  }
 }
