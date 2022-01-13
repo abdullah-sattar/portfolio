@@ -48,7 +48,6 @@
 
     i:hover {
       color: white;
-      cursor: pointer;
       transition: 0.4s;
     }
 
@@ -59,7 +58,6 @@
 
     svg:hover {
       fill: white;
-      cursor: pointer;
     }
 
     svg:hover + .icon-name {
