@@ -1,6 +1,7 @@
 @import "variables";
 
 .main {
+    scroll-behavior: smooth;
     >.main_section {
         >.section_p {
             font-weight: bold;
