@@ -88,14 +88,22 @@ html body {
 .nav {
   position: fixed;
   left: 80%;
+  border-radius: 10px;
 }
 .nav > .nav_btn {
   font-size: 9vh;
-  color: #CCCCCC;
-  margin: 20%;
+  color: #cccccc;
   border: none;
 }
 
+@media screen and (min-width: 768px) {
+  .nav {
+    left: 85%;
+  }
+  .nav .nav_btn {
+    font-size: 12vh;
+  }
+}
 @media screen and (min-width: 1024px) {
   .nav {
     display: none;
@@ -152,10 +160,59 @@ html body {
 .aside > .aside_h1 {
   display: none;
 }
+.aside > .aside_closeBtn {
+  display: none;
+}
 .aside > .aside_ul {
   display: none;
 }
 
+.aside--openMenu {
+  transition: 0.3s;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 17%;
+  padding-top: 3%;
+  height: 100%;
+  border-right: 5px solid #F96A3D;
+}
+.aside--openMenu > .aside_h1--openMenu {
+  transition: 0.3s;
+  display: block;
+  font-size: 8vh;
+}
+.aside--openMenu > .aside_closeBtn--openMenu {
+  transition: 1s;
+  display: block;
+  position: fixed;
+  left: 80%;
+  font-size: 8vh;
+  color: #cccccc;
+  border: none;
+}
+.aside--openMenu > .aside_ul--openMenu {
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aside--openMenu > .aside_ul--openMenu > li {
+  padding-bottom: 100px;
+  scroll-behavior: smooth;
+}
+
+@media screen and (min-width: 768px) {
+  .aside--openMenu > .aside_h1--openMenu {
+    font-size: 10vh;
+  }
+  .aside--openMenu > .aside_closeBtn--openMenu {
+    left: 85%;
+    font-size: 10vh;
+  }
+}
 @media screen and (min-width: 1024px) {
   .aside {
     position: fixed;
@@ -314,7 +371,6 @@ html body {
   gap: 15vh;
 }
 .portfolio .project-wrapper {
-  position: relative;
   width: 20vh;
   height: 25vh;
 }
@@ -325,7 +381,6 @@ html body {
   box-shadow: 5px 10px 10px #2c2c2c;
 }
 .portfolio .project-wrapper > .info-wrapper {
-  position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
@@ -409,7 +464,8 @@ html body {
 .contact > .contact_flex-container > .contact_links {
   display: flex;
   align-items: center;
-  margin-right: 20%;
+  margin-right: 15%;
+  gap: 10%;
 }
 .contact > .contact_flex-container > .contact_links > i {
   color: #CCCCCC;
@@ -457,7 +513,7 @@ html body {
 }
 
 .primary-input {
-  width: 50vh;
+  width: 45vh;
   height: 3vh;
   border-radius: 4px;
   background-color: white;
@@ -466,7 +522,7 @@ html body {
 }
 
 .secondary-input {
-  width: 50vh;
+  width: 45vh;
   border-radius: 4px;
   background-color: white;
   border-style: ridge;

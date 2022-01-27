@@ -36,7 +36,8 @@
         >.contact_links {
             display: flex;
             align-items: center;
-            margin-right: 20%;
+            margin-right: 15%;
+            gap: 10%;
 
             >i {
                 color: $quaternary-color;

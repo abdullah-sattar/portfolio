@@ -20,16 +20,17 @@
 
   <body>
     <nav class="nav">
-      <button class="nav_btn">☰</button>
+      <button onclick="openMenu()" class="nav_btn">☰</button>
     </nav>
 
     <aside class="aside">
       <h1 class="aside_h1">A<span class="h1_span">s</span></h1>
+      <button onclick="openMenu()" class="aside_closeBtn">X</button>
       <ul class="aside_ul">
-        <li><a href="#about-me">ABOUT ME</a></li>
-        <li><a href="#skills-section">TECH SKILLS</a></li>
-        <li><a href="#portfolio-section">PORTFOLIO</a></li>
-        <li><a href="#contact-section">CONTACT</a></li>
+        <li onclick="closeMenu()"><a href="#about-me">ABOUT ME</a></li>
+        <li onclick="closeMenu()"><a href="#skills-section">TECH SKILLS</a></li>
+        <li onclick="closeMenu()"><a href="#portfolio-section">PORTFOLIO</a></li>
+        <li onclick="closeMenu()"><a href="#contact-section">CONTACT</a></li>
       </ul>
     </aside>
 
@@ -169,62 +170,62 @@
           <div class="project-wrapper">
             <img src="./game-preview.png" alt="game-challenge" />
             <div class="info-wrapper">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Explicabo impedit iure cupiditate quo quidem illo tempora
-                  voluptas, amet ipsam at minima possimus voluptates dolore ex.
-                  Repudiandae exercitationem quia tempora magnam!
-                </p>
-                <div class="button-wrapper">
-                  <button class="btn-primary">Live Site</button>
-                  <button class="btn-primary">Git Repo</button>
-                </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Explicabo impedit iure cupiditate quo quidem illo tempora
+                voluptas, amet ipsam at minima possimus voluptates dolore ex.
+                Repudiandae exercitationem quia tempora magnam!
+              </p>
+              <div class="button-wrapper">
+                <button class="btn-primary">Live Site</button>
+                <button class="btn-primary">Git Repo</button>
               </div>
+            </div>
           </div>
           <div class="project-wrapper">
             <img src="./morse-code.png" alt="morse-code translator" />
             <div class="info-wrapper">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Explicabo impedit iure cupiditate quo quidem illo tempora
-                  voluptas, amet ipsam at minima possimus voluptates dolore ex.
-                  Repudiandae exercitationem quia tempora magnam!
-                </p>
-                <div class="button-wrapper">
-                  <button class="btn-primary">Live Site</button>
-                  <button class="btn-primary">Git Repo</button>
-                </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Explicabo impedit iure cupiditate quo quidem illo tempora
+                voluptas, amet ipsam at minima possimus voluptates dolore ex.
+                Repudiandae exercitationem quia tempora magnam!
+              </p>
+              <div class="button-wrapper">
+                <button class="btn-primary">Live Site</button>
+                <button class="btn-primary">Git Repo</button>
               </div>
+            </div>
           </div>
           <div class="project-wrapper">
             <img src="./ticket-tracker.png" alt="ticket-tracker" />
             <div class="info-wrapper">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Explicabo impedit iure cupiditate quo quidem illo tempora
-                  voluptas, amet ipsam at minima possimus voluptates dolore ex.
-                  Repudiandae exercitationem quia tempora magnam!
-                </p>
-                <div class="button-wrapper">
-                  <button class="btn-primary">Live Site</button>
-                  <button class="btn-primary">Git Repo</button>
-                </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Explicabo impedit iure cupiditate quo quidem illo tempora
+                voluptas, amet ipsam at minima possimus voluptates dolore ex.
+                Repudiandae exercitationem quia tempora magnam!
+              </p>
+              <div class="button-wrapper">
+                <button class="btn-primary">Live Site</button>
+                <button class="btn-primary">Git Repo</button>
               </div>
+            </div>
           </div>
           <div class="project-wrapper">
             <img src="./beers-api.png" alt="beers collection" />
             <div class="info-wrapper">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Explicabo impedit iure cupiditate quo quidem illo tempora
-                  voluptas, amet ipsam at minima possimus voluptates dolore ex.
-                  Repudiandae exercitationem quia tempora magnam!
-                </p>
-                <div class="button-wrapper">
-                  <button class="btn-primary">Live Site</button>
-                  <button class="btn-primary">Git Repo</button>
-                </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Explicabo impedit iure cupiditate quo quidem illo tempora
+                voluptas, amet ipsam at minima possimus voluptates dolore ex.
+                Repudiandae exercitationem quia tempora magnam!
+              </p>
+              <div class="button-wrapper">
+                <button class="btn-primary">Live Site</button>
+                <button class="btn-primary">Git Repo</button>
               </div>
+            </div>
           </div>
         </div>
       </section>
@@ -260,5 +261,6 @@
         </div>
       </section>
     </main>
+    <script src="main.js"></script>
   </body>
 </html>

@@ -1,21 +1,29 @@
 @import "variables";
 
 .nav {
+  position: fixed;
+  left: 80%;
+  border-radius: 10px;
 
-    position: fixed;
-    left: 80%;
+  > .nav_btn {
+    font-size: 9vh;
+    color: #cccccc;
+    border: none;
+  }
+}
 
-    >.nav_btn {
-        font-size: 9vh;
-        color: #CCCCCC;
-        margin: 20%;
-        border: none;
+@media screen and (min-width: $tablet-breakpoint) {
+  .nav {
+    left: 85%;
+
+    .nav_btn {
+      font-size: 12vh;
     }
+  }
 }
 
 @media screen and (min-width: $desktop-breakpoint) {
-    .nav {
-        display: none;
-    }
-    
+  .nav {
+    display: none;
+  }
 }
