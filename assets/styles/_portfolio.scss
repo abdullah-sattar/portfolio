@@ -3,10 +3,11 @@
 .portfolio {
   margin-left: 10%;
   margin-right: 10%;
-  padding-top: 30%;
+  padding-top: 20%;
 
   .portfolio_h2 {
     padding-bottom: 10%;
+    padding-top: 10%;
   }
 
   > .portfolio_div {
@@ -17,9 +18,10 @@
   }
 
   .project-wrapper {
-    // position: relative;
+    position: relative;
     width: 20vh;
     height: 25vh;
+    z-index: 1;
 
     img {
       width: 100%;
@@ -29,7 +31,7 @@
     }
 
     > .info-wrapper {
-      // position: absolute;
+      position: absolute;
       top: 0;
       bottom: 0;
       left: 0;
@@ -38,15 +40,45 @@
       height: 100%;
       opacity: 0;
       border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow: scroll;
+      overflow-y: hidden;
+      overflow-x: hidden;
 
-      p {
-        padding: 20px;
+      >.info-wrapper__title {
         background-color: rgba(75, 75, 75, 0);
+        padding: 10px;
+      }
+
+      >.info-wrapper__desc {
+        background-color: rgba(75, 75, 75, 0);
+        padding: 10px;
+        
+      }
+
+      >.info-wrapper__techContainer {
+        display: flex;
+        justify-content: center;
+        gap: 5vh;
+        background-color: rgba(75, 75, 75, 0);
+        padding: 10px;
+
+        >h3 {
+          background-color: rgba(75, 75, 75, 0);
+        }
       }
 
       .button-wrapper {
         background-color: rgba(75, 75, 75, 0);
         display: flex;
+        padding: 10px;
+        padding-right: 30%;
+
+        >button {
+          min-width: max-content
+        }
       }
     }
   }

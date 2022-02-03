@@ -27,6 +27,7 @@
   padding-top: 3%;
   height: 100%;
   border-right: 5px solid $tertiary-color;
+  z-index: 2;
 
   > .aside_h1--openMenu {
     transition: 0.3s;
@@ -35,11 +36,10 @@
   }
 
   > .aside_closeBtn--openMenu {
-    transition: 1s;
     display: block;
     position: fixed;
     left: 80%;
-    font-size: 8vh;
+    font-size: 6vh;
     color: #cccccc;
     border: none;
   }
