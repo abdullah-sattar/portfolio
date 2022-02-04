@@ -1,80 +1,81 @@
 @import "variables";
 
 .contact {
-    margin-left: 10%;
-    margin-right: 10%;
-    padding-top: 20%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 20%;
 
-    .contact_h2 {
-        padding-bottom: 10%;
-        padding-top: 10%;
+  .contact_h2 {
+    padding-bottom: 10%;
+    padding-top: 10%;
+  }
+
+  > .contact_flex-container {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 7vh;
+    padding-bottom: 20%;
+
+    > .contact_form {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      align-content: stretch;
+      flex-wrap: nowrap;
+      justify-content: flex-end;
+      gap: 1.5vh;
+
+      > .btn-primary {
+        width: 35%;
+        margin-top: 5%;
+      }
     }
 
-    >.contact_flex-container {
-        display: flex;
-        flex-direction: column;
-        align-content: space-between;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 7vh;
-        padding-bottom: 20%;
+    > .contact_links {
+      display: flex;
+      align-items: center;
+      margin-right: 15%;
+      gap: 10%;
 
-        >.contact_form {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            align-content: stretch;
-            flex-wrap: nowrap;
-            justify-content: flex-end;
-            gap: 1.5vh;
-
-            >.btn-primary {
-                width: 35%;
-                margin-top: 5%;
-            }
+      > a {
+        > i {
+          color: $quaternary-color;
+          font-size: 6vh;
+          margin-left: 10%;
+          margin-right: 10%;
         }
 
-        >.contact_links {
-            display: flex;
-            align-items: center;
-            margin-right: 15%;
-            gap: 10%;
-
-            >i {
-                color: $quaternary-color;
-                font-size: 6vh;
-                margin-left: 10%;
-                margin-right: 10%;
-            }
-
-            i:hover {
-                color: white;
-                cursor: pointer;
-                transition: 0.4s;
-            }
+        i:hover {
+          color: white;
+          cursor: pointer;
+          transition: 0.3s;
         }
+      }
     }
+  }
 }
 
 @media screen and (min-width: $desktop-breakpoint) {
-    .contact {
-
-        >.contact_div {
-            margin-left: 15%;
-        }
-
-        >.contact_flex-container {
-            margin-left: 15%;
-            gap: 40vh;
-            flex-direction: row;
-
-            >.contact_links {
-                flex-direction: column;
-                align-items: flex-start;
-                margin-right: 0%;
-                gap: 10vh;
-                align-self: baseline;
-            }
-        }
+  .contact {
+    > .contact_div {
+      margin-left: 15%;
     }
+
+    > .contact_flex-container {
+      margin-left: 15%;
+      gap: 40vh;
+      flex-direction: row;
+
+      > .contact_links {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-right: 0%;
+        gap: 10vh;
+        align-self: baseline;
+      }
+    }
+  }
 }

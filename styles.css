@@ -91,7 +91,7 @@ html body {
 
 .nav {
   position: fixed;
-  left: 80%;
+  left: 77%;
   z-index: 2;
   border-radius: 10px;
 }
@@ -264,7 +264,7 @@ html body {
   border-radius: 10px;
 }
 .about > .about_div p {
-  text-align: justify;
+  text-align: left;
   font-size: 3vh;
 }
 
@@ -405,8 +405,8 @@ html body {
   flex-direction: column;
   align-items: center;
   overflow: scroll;
-  overflow-y: hidden;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 .portfolio .project-wrapper > .info-wrapper > .info-wrapper__title {
   background-color: rgba(75, 75, 75, 0);
@@ -419,20 +419,30 @@ html body {
 .portfolio .project-wrapper > .info-wrapper > .info-wrapper__techContainer {
   display: flex;
   justify-content: center;
-  gap: 5vh;
+  gap: 2vh;
   background-color: rgba(75, 75, 75, 0);
   padding: 10px;
 }
-.portfolio .project-wrapper > .info-wrapper > .info-wrapper__techContainer > h3 {
+.portfolio .project-wrapper > .info-wrapper > .info-wrapper__techContainer > h4 {
   background-color: rgba(75, 75, 75, 0);
 }
 .portfolio .project-wrapper > .info-wrapper .button-wrapper {
   background-color: rgba(75, 75, 75, 0);
   display: flex;
   padding: 10px;
-  padding-right: 30%;
+  padding-right: 12%;
+  gap: 10%;
 }
-.portfolio .project-wrapper > .info-wrapper .button-wrapper > button {
+.portfolio .project-wrapper > .info-wrapper .button-wrapper > a {
+  background-color: #F96A3D;
+  border: 1px solid black;
+  border-radius: 8px;
+  color: #EDEDED;
+  padding: 1%;
+  font-size: 3vh;
+  align-self: center;
+  border: 1px solid black;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   min-width: max-content;
 }
 .portfolio .project-wrapper:hover {
@@ -460,8 +470,8 @@ html body {
     width: 25vh;
     height: 30vh;
   }
-  .portfolio .project-wrapper .button-wrapper {
-    margin-left: 5vh;
+  .portfolio .project-wrapper .info-wrapper .button-wrapper {
+    padding-right: 10%;
   }
   .portfolio .project-wrapper:hover {
     width: 50vh;
@@ -505,16 +515,16 @@ html body {
   margin-right: 15%;
   gap: 10%;
 }
-.contact > .contact_flex-container > .contact_links > i {
+.contact > .contact_flex-container > .contact_links > a > i {
   color: #CCCCCC;
   font-size: 6vh;
   margin-left: 10%;
   margin-right: 10%;
 }
-.contact > .contact_flex-container > .contact_links i:hover {
+.contact > .contact_flex-container > .contact_links > a i:hover {
   color: white;
   cursor: pointer;
-  transition: 0.4s;
+  transition: 0.3s;
 }
 
 @media screen and (min-width: 1024px) {
@@ -551,7 +561,7 @@ html body {
 }
 
 .primary-input {
-  width: 45vh;
+  width: 40vh;
   height: 3vh;
   border-radius: 4px;
   background-color: white;
@@ -560,10 +570,20 @@ html body {
 }
 
 .secondary-input {
-  width: 45vh;
+  width: 40vh;
   border-radius: 4px;
   background-color: white;
   border-style: ridge;
   border: 1.5px solid black;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (min-width: 768px) {
+  .primary-input {
+    width: 60vh;
+  }
+
+  .secondary-input {
+    width: 60vh;
+  }
 }
