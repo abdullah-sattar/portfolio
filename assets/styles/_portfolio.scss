@@ -68,6 +68,26 @@
         }
       }
 
+      .singleBtn-wrapper {
+        background-color: rgba(75, 75, 75, 0);
+        display: flex;
+        padding: 10px;
+        gap: 10%;
+
+        > a {
+          background-color: $tertiary-color;
+          border: 1px solid black;
+          border-radius: 8px;
+          color: $secondary-color;
+          padding: 1%;
+          font-size: 3vh;
+          align-self: center;
+          border: 1px solid rgb(0 0 0);
+          box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+          min-width: max-content;
+        }
+      }
+
       .button-wrapper {
         background-color: rgba(75, 75, 75, 0);
         display: flex;
@@ -125,18 +145,6 @@
   background-color: rgba(75, 75, 75, 0.8);
 }
 
-@media screen and (min-width: $tablet-breakpoint) {
-  .portfolio {
-    .project-wrapper {
-      .info-wrapper {
-        .info-wrapper__techContainer {
-          gap: 2vh;
-        }
-      }
-    }
-  }
-}
-
 @media screen and (min-width: $desktop-breakpoint) {
   .portfolio {
     margin-left: 0%;
@@ -157,6 +165,9 @@
         overflow-y: hidden;
         .button-wrapper {
           padding-right: 10%;
+        }
+        .info-wrapper__techContainer {
+          gap: 2vh;
         }
       }
     }
