@@ -24,7 +24,7 @@
     </nav>
 
     <aside class="aside">
-      <h1 class="aside_h1">A<span class="h1_span">s</span></h1>
+      <h1 onclick="closeMenu()" class="aside_h1"><a href="#main">A<sub class="h1_span">s</a></sub></h1>
       <button onclick="openMenu()" class="aside_closeBtn">X</button>
       <ul class="aside_ul">
         <li onclick="closeMenu()"><a href="#about-me">ABOUT ME</a></li>
@@ -38,7 +38,7 @@
 
     <main class="main">
       <section class="main_section">
-        <p class="section_p">
+        <p id="main" class="section_p">
           Hello! My name is Abdullah and I’m a junior software developer.
         </p>
       </section>
@@ -385,25 +385,14 @@
         </div>
 
         <div class="contact_flex-container">
-          <form action="" class="contact_form">
-            <h3>Get in touch</h3>
-            <label for="name">Name:</label>
-            <input type="text" id="name" class="primary-input" />
-            <label for="email">Email:</label>
-            <input type="email" id="email" class="primary-input" />
-            <label for="message">Message:</label>
-            <textarea
-              name="comment"
-              id="message"
-              class="secondary-input"
-              cols="35"
-              rows="10"
-            ></textarea>
-            <button class="btn-primary">Send</button>
-          </form>
+          <div class="contact_email">
+            <h3>You can reach me at: </h3>
+            <br>
+            <h1 class="email">abdullah_a_s@hotmail.co.uk</h1>
+          </div>
 
           <div class="contact_links">
-            <h3>Links</h3>
+            <h3>Links:</h3>
             <a
               href="https://www.linkedin.com/in/abdullah-abdul-sattar-37534822a/"
               ><i class="fab fa-linkedin"></i
@@ -418,3 +407,21 @@
     <script src="main.js"></script>
   </body>
 </html>
+
+
+<!-- <form action="" class="contact_form">
+  <h3>Get in touch</h3>
+  <label for="name">Name:</label>
+  <input type="text" id="name" class="primary-input" />
+  <label for="email">Email:</label>
+  <input type="email" id="email" class="primary-input" />
+  <label for="message">Message:</label>
+  <textarea
+    name="comment"
+    id="message"
+    class="secondary-input"
+    cols="35"
+    rows="10"
+  ></textarea>
+  <button class="btn-primary">Send</button>
+</form> -->

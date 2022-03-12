@@ -32,7 +32,10 @@
   > .aside_h1--openMenu {
     transition: 0.3s;
     display: block;
-    font-size: 8vh;
+    >a{
+      font-size: 8vh;
+    }
+    
   }
 
   > .aside_closeBtn--openMenu {
@@ -59,7 +62,9 @@
 @media screen and (min-width: $tablet-breakpoint) {
   .aside--openMenu {
     > .aside_h1--openMenu {
-      font-size: 10vh;
+      >a {
+        font-size: 10vh;
+      }
     }
     > .aside_closeBtn--openMenu {
       left: 85%;
@@ -82,6 +87,9 @@
 
     > .aside_h1 {
       display: block;
+      >a{
+        font-size: 10vh;
+      }
     }
 
     > .aside_ul {
